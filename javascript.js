@@ -53,9 +53,15 @@ function playRound() {
         }
     }
     
+}
+
+
+function playGame(){
+    for(let i=0;i<5;i++){
+        playRound();
+    }
     console.log(`Human Score: ${HumanScore}`);
     console.log(`Computer Score: ${ComputerScore}`);
-
     if (HumanScore > ComputerScore) {
         console.log("YOU WIN");
     } else if (HumanScore < ComputerScore) {
@@ -65,4 +71,6 @@ function playRound() {
     }
 }
 
-playRound();
+
+// playRound();
+playGame();
